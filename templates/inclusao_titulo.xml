@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:impl="http://impl.webservice.ymb.app.bsbr.altec.com/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<impl:registraTitulo>
+			<dto>
+				<dtNsu>{data_nsu}</dtNsu>
+				<estacao>{estacao}</estacao>
+				<nsu>{nsu}</nsu>
+				<ticket>{ticket}</ticket>
+				<tpAmbiente>{tipo_ambiente}</tpAmbiente>
+			</dto>
+		</impl:registraTitulo>
+	</soapenv:Body>
+</soapenv:Envelope>
