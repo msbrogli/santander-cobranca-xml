@@ -11,7 +11,7 @@ nosso_numero = '1'
 data = {
 	'cod_convenio': 'CONVENIO',
 	'tp_doc': '01', # 01=CPF, 02=CNPJ
-	'num_doc': '111111111-11',
+	'num_doc': '11111111111',
 	'pagador_nome': '',
 	'pagador_endereco': '',
 	'pagador_bairro': '',
@@ -61,4 +61,4 @@ print ''
 
 ## Testing
 
-I have tested using my company's cliente ssl certificate and it works fine.
+I have tested using my company's client ssl certificate and it works fine.
