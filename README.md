@@ -61,4 +61,4 @@ print ''
 
 ## Testing
 
-I have tested using my company's client ssl certificate and it works fine.
+I have tested using my company's client ssl certificate and it worked fine.
