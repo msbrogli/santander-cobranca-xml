@@ -6,6 +6,8 @@ In Brazil, Santander requires the use of a client ssl certificate.
 
 ## Example
 
+Notice that one may not use the same ticket twice. Thus, in this examples, it is necessary to request two tickets, one to register the *boleto bancário* and the other to retrieve the status.
+
 ```
 nosso_numero = '1'
 data = {
@@ -52,10 +54,15 @@ print 'data nsu', data_nsu
 print 'situacao', ret2.situacao
 print 'descricao', ret2.descricao
 print ''
-ret3 = consultar_titulo(ret1.ticket, estacao=estacao, nsu=nsu, data_nsu=data_nsu, cert=cert, teste=False)
+ret3 = get_ticket(data, cert=cert)
+print '-- solicita ticket --'
+print 'retCode', ret3.return_code
+print 'ticket', ret3.ticket
+print ''
+ret4 = consultar_titulo(ret3.ticket, estacao=estacao, nsu=nsu, data_nsu=data_nsu, cert=cert, teste=False)
 print '-- consulta titulo --'
-print 'situacao', ret3.situacao
-print 'descricao', ret3.descricao
+print 'situacao', ret4.situacao
+print 'descricao', ret4.descricao
 print ''
 ```
 
