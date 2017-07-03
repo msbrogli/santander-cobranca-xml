@@ -1,6 +1,10 @@
+# encoding: utf-8
+
+from setuptools import setup, find_packages
+
 setup(
     name='santander-cobranca-xml',
-    version='v1.0.0-beta',
+    version='1.0.1',
     author='Marcelo Salhab Brogliato',
     author_email='msbrogli@gmail.com',
     url='https://github.com/msbrogli/santander-cobranca-xml',
@@ -15,7 +19,7 @@ setup(
     ],
     license='MIT',
     description='Consumes the API given by Santander in order to register a *boleto bancário*.',
-    long_description=read('README.md'),
+    long_description=open('README.md').read(),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Operating System :: OS Independent',
